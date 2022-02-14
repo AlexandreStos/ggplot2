@@ -1,0 +1,8 @@
+library(tidyverse)
+
+
+ggplot(data=moda, aes(x=loja, y=bermuda))+
+geom_col(position="dodge")+
+theme_classic()+
+labs(x="Quantidade de vendas de bermuda", y="Nome das lojas",title = "Vendas no Brasil")+
+coord_flip()
